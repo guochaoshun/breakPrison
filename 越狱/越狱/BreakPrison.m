@@ -20,7 +20,7 @@
 // load是系统调用的,不会被hook,一定要用真机测试
 + (void)load {
     
-    if ([self isAlreadyBreakPrison]) {
+    if (isAlreadyBreakPrison()) {
         NSLog(@"该设备已经越狱了");
 //        exit(0);
     }
@@ -28,13 +28,13 @@
 
 }
 
-
-/// 这个设备是否已经越狱了
-+ (BOOL)isAlreadyBreakPrison {
-    
+//为什么用c方法呢?
+//因为c语言是静态的,在编译时已经确定了,不会被hook,而系统的c方法,因为动态链接库的原因,可能被hook
+/// 这个设备是否已经越狱了,
+bool isAlreadyBreakPrison(){
     
     // 1.越狱后会在系统的根目录下添加一些文件,根据这些文件是否存在,判定是否越狱
-    
+
     // Cydia是越狱过程中装的一个破解软件,类似于App Store
     NSString *cydiaPath = @"/Applications/Cydia.app";
     NSString *aptPath = @"/private/var/lib/apt/";
@@ -87,8 +87,8 @@
         
     }
     
-
-
+    
+    
     
     
     //4.MobileSubstrate.dylib是一个动态库框架，允许第三方的开发者在系统的方法里打一些运行时补丁
@@ -100,7 +100,7 @@
     for (uint32_t i = 0 ; i < count; ++i) {
         
         NSString *name = [[NSString alloc]initWithUTF8String:_dyld_get_image_name(i)];
-//        NSLog(@"%@",name);
+        //        NSLog(@"%@",name);
         if ([name containsString:@"Library/MobileSubstrate/MobileSubstrate.dylib"]) {
             return YES;
         }
