@@ -15,6 +15,7 @@
 		180DF3FE226F163B004C8CF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DF3FD226F163B004C8CF2 /* main.m */; };
 		180DF408226F163B004C8CF2 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DF407226F163B004C8CF2 /* __Tests.m */; };
 		180DF414226F1673004C8CF2 /* BreakPrison.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DF413226F1673004C8CF2 /* BreakPrison.m */; };
+		9C0062832295328200B9A31D /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0062822295328200B9A31D /* NetWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		180DF409226F163B004C8CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180DF412226F1673004C8CF2 /* BreakPrison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakPrison.h; sourceTree = "<group>"; };
 		180DF413226F1673004C8CF2 /* BreakPrison.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakPrison.m; sourceTree = "<group>"; };
+		9C0062812295328200B9A31D /* NetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		9C0062822295328200B9A31D /* NetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				180DF3F2226F163A004C8CF2 /* ViewController.m */,
 				180DF412226F1673004C8CF2 /* BreakPrison.h */,
 				180DF413226F1673004C8CF2 /* BreakPrison.m */,
+				9C0062812295328200B9A31D /* NetWork.h */,
+				9C0062822295328200B9A31D /* NetWork.m */,
 				180DF3F4226F163A004C8CF2 /* Main.storyboard */,
 				180DF3F7226F163B004C8CF2 /* Assets.xcassets */,
 				180DF3F9226F163B004C8CF2 /* LaunchScreen.storyboard */,
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180DF414226F1673004C8CF2 /* BreakPrison.m in Sources */,
+				9C0062832295328200B9A31D /* NetWork.m in Sources */,
 				180DF3F3226F163A004C8CF2 /* ViewController.m in Sources */,
 				180DF3FE226F163B004C8CF2 /* main.m in Sources */,
 				180DF3F0226F163A004C8CF2 /* AppDelegate.m in Sources */,
@@ -370,14 +376,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 769VT32NP2;
+				DEVELOPMENT_TEAM = 8Q4RDME4A2;
 				INFOPLIST_FILE = "越狱/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.break;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwyl.break;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,14 +394,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 769VT32NP2;
+				DEVELOPMENT_TEAM = 8Q4RDME4A2;
 				INFOPLIST_FILE = "越狱/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.break;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwyl.break;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
